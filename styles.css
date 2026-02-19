@@ -44,6 +44,9 @@ body{
   padding:1rem 0;
 }
 
+/* Mobile nav (buttons shown under header on small screens) */
+.mobile-nav{display:none}
+
 .logo{
   font-family:'Playfair Display',serif;
   font-size:1.1rem;
@@ -314,13 +317,15 @@ h3{
   box-shadow: 0 10px 24px rgba(0,0,0,0.15);
 }
 
-
-
 /* Responsive */
 @media(max-width:768px){
   .hero h2{font-size:1.6rem}
   .section-header{flex-direction:column;align-items:flex-start;gap:0.5rem}
   .footer-inner{flex-direction:column;gap:0.5rem}
+
+  .header-inner{flex-direction:column;align-items:center}
+  .mobile-nav{display:flex;gap:0.5rem;width:100%;margin-top:0.5rem;justify-content:center;flex-wrap:nowrap}
+  .mobile-nav a{flex:0 1 auto;white-space:nowrap}
 }
 
 @media (max-width: 992px) {
